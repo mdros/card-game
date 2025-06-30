@@ -12,7 +12,6 @@ export default function Home() {
   const people = usePeople();
   const starships = useStarships();
   
-  // Score counters
   const [leftScore, setLeftScore] = useState(0);
   const [rightScore, setRightScore] = useState(0);
 
@@ -33,11 +32,6 @@ export default function Home() {
     }
   };
 
-  const playAgain = () => {
-    handleDraw(usePeopleMode);
-  };
-
-  // Switch handler
   const handleSwitch = (event: React.ChangeEvent<HTMLInputElement>) => {
     const newMode = event.target.checked;
     setUsePeopleMode(newMode);
@@ -72,7 +66,7 @@ export default function Home() {
         <Typography variant="h6">
           Winner: {winner !== null ? (winner === 0 ? "Left Card" : "Right Card") : "It's a tie!"}
         </Typography>
-        <Button variant="contained" sx={{ mt: 2 }} onClick={playAgain} color="warning">
+        <Button variant="contained" sx={{ mt: 2 }} onClick={() => handleDraw(usePeopleMode)} color="warning">
           Play Again
         </Button>
       </Box>

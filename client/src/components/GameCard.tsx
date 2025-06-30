@@ -15,10 +15,7 @@ const GameCard = ({ card, isPeopleMode, highlight = false }: GameCardProps) => (
         {card.name}
       </Typography>
       {isPeopleMode ? (
-        <>
-          <Typography>Attack: {(card as Person).attack}</Typography>
-          <Typography>Gender: {(card as Person).gender}</Typography>
-        </>
+        <Typography>Attack: {(card as Person).attack}</Typography>
       ) : (
         <>
           <Typography>Crew: {(card as Starship).crew}</Typography>
