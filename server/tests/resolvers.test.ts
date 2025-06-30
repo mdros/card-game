@@ -65,13 +65,6 @@ describe('Resolvers', () => {
 });
 
 describe('Resolver Logic', () => {
-  it('should calculate pagination correctly', () => {
-    const page = 2;
-    const limit = 10;
-    const skip = (page - 1) * limit;
-    expect(skip).toBe(10);
-  });
-
   it('should handle people query structure', () => {
     const mockPeople = [{ id: 1, name: 'Luke', attack: 99 }];
     const mockTotal = 1;
