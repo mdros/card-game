@@ -1,6 +1,6 @@
 # Card Game
 
-A Star Wars card game built with Next.js frontend and GraphQL backend.
+A card war game built with Next.js frontend and GraphQL backend.
 
 ## Architecture
 
@@ -14,7 +14,7 @@ A Star Wars card game built with Next.js frontend and GraphQL backend.
 ### With Docker (Recommended)
 
 ```bash
-# Start all services
+# Start postgres container
 docker-compose up
 
 # Access the application

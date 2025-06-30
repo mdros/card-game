@@ -1,6 +1,6 @@
 # Card Game Backend Server
 
-A GraphQL server built with Apollo Server, Prisma, and TypeScript for a Star Wars card game.
+A GraphQL server built with Apollo Server, Prisma, and TypeScript for a card war game.
 
 ## Tech Stack
 

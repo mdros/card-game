@@ -11,7 +11,6 @@ const createMockPrisma = () => ({
   },
 });
 
-// Test the resolver logic directly
 const createResolvers = (prisma: any) => ({
   Query: {
     people: async (_: any, { page = 1, limit = 10 }: { page: number; limit: number }) => {
@@ -65,7 +64,6 @@ describe('Resolvers', () => {
   });
 });
 
-// Simple test without complex mocking
 describe('Resolver Logic', () => {
   it('should calculate pagination correctly', () => {
     const page = 2;
